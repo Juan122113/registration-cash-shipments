@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Pedidos en Efectivo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Registro de Pedidos en Efectivo</h1>
+        <form id="pedidoForm">
+            <input type="date" id="fecha" required>
+            <input type="number" id="importePagado" placeholder="Importe pagado al local" step="0.01" required>
+            <input type="number" id="importeCobrado" placeholder="Importe cobrado al cliente" step="0.01" required>
+            <button type="submit">Agregar Pedido</button>
+        </form>
+        <button id="borrarTodo">Borrar Todos los Pedidos</button>
+        <table id="pedidosTable">
+            <thead>
+                <tr>
+                    <th>Nº</th>
+                    <th>Fecha</th>
+                    <th>Importe Pagado</th>
+                    <th>Importe Cobrado</th>
+                    <th>Coste de Envío</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <div id="totalCosteEnvio">Total Coste de Envío: 0.00€</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
