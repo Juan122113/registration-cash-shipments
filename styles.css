@@ -5,7 +5,7 @@ html {
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    font-size: 3vw;
+    font-size: 1.1vh;
     margin: 0;
     padding: 20px;
     background-color: #00000000;
@@ -34,6 +34,10 @@ form {
     margin-bottom: 20px;
 }
 
+form input {
+    background-color: black;
+}
+
 input, button {
     padding: 10px;
     border: 1px solid #ddd;
@@ -41,7 +45,7 @@ input, button {
 }
 
 button {
-    background-color: #61ddff;
+    background-color: #409db6;
     color: white;
     border: none;
     cursor: pointer;
@@ -64,6 +68,7 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
+    /* font-size: 1.2vh; */
 }
 
 th, td {
@@ -93,4 +98,10 @@ th {
 
 .borrar-fila:hover {
     background-color: #c9302c;
+}
+
+@media (min-width: 520px) {
+    body {
+        font-size: 3vh;
+    }
 }
