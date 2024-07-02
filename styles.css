@@ -1,15 +1,17 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    font-size: 3vw;
     margin: 0;
     padding: 20px;
-    background-color: #f4f4f4;
+    background-color: #00000000;
+    color: white;
 }
 
 .container {
     max-width: 800px;
     margin: auto;
-    background: white;
+    background: black;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -17,11 +19,12 @@ body {
 
 h1 {
     text-align: center;
-    color: #333;
+    color: white;
 }
 
 form {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     gap: 10px;
     margin-bottom: 20px;
@@ -34,14 +37,14 @@ input, button {
 }
 
 button {
-    background-color: #5cb85c;
+    background-color: #61ddff;
     color: white;
     border: none;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #4cae4c;
+    background-color: #61ddffc5;
 }
 
 #borrarTodo {
