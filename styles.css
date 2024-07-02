@@ -1,3 +1,7 @@
+html {
+    background-color: rgb(47, 47, 47);
+}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -69,7 +73,7 @@ th, td {
 }
 
 th {
-    background-color: #f2f2f2;
+    background-color: #f2f2f200;
 }
 
 #totalCosteEnvio {
