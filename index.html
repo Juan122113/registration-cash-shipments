@@ -15,21 +15,24 @@
             <input type="number" id="importeCobrado" placeholder="Importe cobrado al cliente" step="0.01" required>
             <button type="submit">Agregar Pedido</button>
         </form>
+        <button id="borrarTodo">Borrar Todos los Pedidos</button>
+        <button id="borrarDia">Borrar Total del Día</button>
         <table id="pedidosTable">
             <thead>
                 <tr>
-                    <th>Nro</th>
                     <th>Fecha</th>
-                    <th>Importe Pagado</th>
-                    <th>Importe Cobrado</th>
-                    <th>Coste de Envío</th>
+                    <th>Pagado</th>
+                    <th>Cobrado</th>
+                    <th>Envío</th>
                     <th>Acción</th>
                 </tr>
             </thead>
             <tbody></tbody>
         </table>
-        <div id="totalCosteEnvio">Total Coste de Envío: 0.00€</div>
-        <button id="borrarTodo">Borrar Todos los Pedidos</button>
+        <div id="totalCosteEnvio">Total Coste de Envío: 0.00</div>
+        <div id="totalDia">Total del Día: 0.00</div>
+        <h2>Totales Diarios</h2>
+        <ul id="totalesDiarios"></ul>
     </div>
     <script src="script.js"></script>
 </body>
