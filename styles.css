@@ -104,6 +104,22 @@ th {
     background-color: #c9302c;
 }
 
+.borrar-semana {
+    background-color: #d9534f;
+}
+
+.borrar-semana:hover {
+    background-color: #c9302c;
+}
+
+.borrar-dia {
+    background-color: #d9534f;
+}
+
+.borrar-dia:hover {
+    background-color: #c9302c;
+}
+
 @media (max-width: 520px) {
 
     body {

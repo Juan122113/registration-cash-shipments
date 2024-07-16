@@ -5,8 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const totalDia = document.getElementById('totalDia');
     const totalesDiarios = document.getElementById('totalesDiarios');
     const borrarTodoBtn = document.getElementById('borrarTodo');
-    const borrarDiaBtn = document.getElementById('borrarDia');
-    const borrarSemanaBtn = document.getElementById('borrarSemana');
     const fechaInput = document.getElementById('fecha');
     const totalSemana = document.getElementById('totalSemana');
     const totalesSemanales = document.getElementById('totalesSemanales');
@@ -124,21 +122,6 @@ document.addEventListener('DOMContentLoaded', () => {
             totalesSemana = {};
             actualizarTabla();
             fechaInput.valueAsDate = new Date(); // Restablecer la fecha actual
-        }
-    });
-
-    borrarDiaBtn.addEventListener('click', () => {
-        const fechaActual = fechaInput.value;
-        if (confirm(`¿Estás seguro de que quieres borrar el total del día ${formatearFecha(fechaActual)}?`)) {
-            borrarTotalDia(fechaActual);
-        }
-    });
-
-    borrarSemanaBtn.addEventListener('click', () => {
-        const fechaActual = fechaInput.value;
-        const semanaActual = formatearSemana(fechaActual);
-        if (confirm(`¿Estás seguro de que quieres borrar el total de la semana ${semanaActual}?`)) {
-            borrarTotalSemana(semanaActual);
         }
     });
 
